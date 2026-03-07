@@ -1,1 +1,53 @@
-Type here
+#DHT-11 Data
+##Test 1:
+###Average Percent Error:
+Temperature: 0.081%
+Humidity: 0.284333%
+###Average Static Error:
+Temperature: 4.05 degrees celsius
+Humidity: 17.06 % Realative humidity
+##Test 2:
+###Average Percent Error:
+Temperature: 0.0666%
+Humidity: 0.173833%
+###Average Static Error:
+Temperature: 5.0334 degrees celsius
+Humidity: 10.43 % Realative humidity
+ 
+    
+ 
+#Ultrasonic Sensor Data
+Distance (cm):	Standard deviation (percent)
+2:	0.06244998
+5:	0.1040833
+10:	0.036055513
+25:	0.106926766
+50:	0.270554985
+100:	0.472581563
+200:	0.255799401
+300:	0.147422296
+390:	N/a
+395:	N/a
+400:	N/a
+405:	N/a
+410:	N/a
+415:	N/a
+420:	N/a
+450:	N/a
+550:	N/a
+580:	N/a
+
+The N/a values are because we only measured one data point.
+
+Average standard deviation: 0.181984%
+
+   
+#MPU Data:
+Static Drift:
+Average Standard deviation: 0.012607%
+
+Accuracy
+Average Error: 1.7372
+Range: 4
+Accuracy: 0.4343
+

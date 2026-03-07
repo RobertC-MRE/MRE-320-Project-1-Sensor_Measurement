@@ -1,22 +1,25 @@
-#DHT-11 Data
-##Test 1:
-###Average Percent Error:
+DHT-11 Data
+Test 1:
+Average Percent Error:
 Temperature: 0.081%
 Humidity: 0.284333%
-###Average Static Error:
+Average Static Error:
 Temperature: 4.05 degrees celsius
 Humidity: 17.06 % Realative humidity
-##Test 2:
-###Average Percent Error:
+Test 2:
+Average Percent Error:
 Temperature: 0.0666%
 Humidity: 0.173833%
-###Average Static Error:
+Average Static Error:
 Temperature: 5.0334 degrees celsius
 Humidity: 10.43 % Realative humidity
- 
-    
+
+When we did test 1, we went outside, waited for the sensor to get data, and then went inside until the next measuring time. For test 2,  we left the sensor running all day and checked the data when the measuring time came. 
+We assume that going in and out caused a bigger error, and we find that the results suport that claim. While we recieved better data during the second test, we still didn't recieve great data. This is because the sensor is old
+and the sensor gets worse over time
  
-#Ultrasonic Sensor Data
+Ultrasonic Sensor DataRepeatabiltiy 
+Repeatabiltiy:
 Distance (cm):	Standard deviation (percent)
 2:	0.06244998
 5:	0.1040833
@@ -37,17 +40,20 @@ Distance (cm):	Standard deviation (percent)
 550:	N/a
 580:	N/a
 
-The N/a values are because we only measured one data point.
-
 Average standard deviation: 0.181984%
 
+The N/a values are because we only measured one data point. Since the datasheet said that the max range was 400cm, we assumed that we were going to get poorer values as we approached 400cm. While the values did get 
+farther from the ground truthm it still was in a realatively good range, so we kept going past 400cm. At 580cm it started to get too inaccurate, so we stopped. Our data was fairly close to the ground truth's data. 
+If you graph the data as a line, they almost exactly match.
    
-#MPU Data:
+MPU Data:
 Static Drift:
 Average Standard deviation: 0.012607%
 
-Accuracy
-Average Error: 1.7372
-Range: 4
-Accuracy: 0.4343
+Accuracy:
+Average Error: 1.7372 m/s/s
+Range: 4 g
+Percent error: 0.044271152%
 
+The accuracy isn't bad, but it is still more than what the datasheet said. We didn't use the datasheet from the supplier of this sensor because they didn't have a datasheet, so we used an mpu from a different manufacturer. 
+This MPU might have a bigger percent error, but we can't confirm that. This could be the reason why our error is greater than the datasheets. Besides the manufacturer, it also could be because the sensor is old. 

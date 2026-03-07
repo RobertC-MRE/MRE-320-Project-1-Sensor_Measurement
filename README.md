@@ -38,13 +38,13 @@ The collected measurements were evaluated using the following metrics.
 Accuracy was calculated using:
 
 ```
-Accuracy = (Ground Truth − Measured Value) / Measured Value
+Accuracy = (Ground Truth − Measured Value) / Span
 ```
 
 ### Static Error
 
 ```
-Error = Ground Truth − Measured Value
+Error = |Ground Truth − Measured Value|
 ```
 
 These calculations were applied during post-processing of the experimental data.
